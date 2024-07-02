@@ -1,12 +1,10 @@
 # Hub
-Locations of all my other githubs repositories.
-
-🏴 CTFs 🏳️  
-- BCACTF 2024    
-   - Hello
+## 🏴 CTFs 🏳️ 
+- BCACTF 2024          
 
 
-🧰 Projects 🧰
+
+## 🧰 Projects 🧰
 - 💻 Windows
   - WLAN profile password grabber: 
 - 🍏 Mac
