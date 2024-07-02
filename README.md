@@ -1,6 +1,6 @@
 # Hub
 ## 🏴 CTFs 🏳️ 
-- BCACTF 2024          
+- BCACTF 5.0 (2024)          
 
 
 
