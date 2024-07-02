@@ -6,4 +6,5 @@
   - Grabs internet passwords and throws them into a file with the format (WLAN profile name) (Password)
   - Does not require admin
   - Tested on windows 10 and 11
+  - Right now only creates or overwrites the file wifi_profiles.txt. In the future will change it to create a file name based on the computer name.
 
