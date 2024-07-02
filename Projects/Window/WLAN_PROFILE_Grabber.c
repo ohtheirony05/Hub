@@ -23,6 +23,7 @@ Steps:
 #include <wlanapi.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #pragma comment(lib, "Wlanapi.lib")
 #pragma comment(lib, "Ole32.lib")
@@ -102,7 +103,26 @@ int main(){
             }
     }
 
-    FILE *fp = fopen("wifi_profiles.txt", "w");
+    DWORD nSize = 200;
+    char lpBuffer[256];
+
+    BOOL Result = GetComputerNameA(lpBuffer, &nSize);
+        printf("Result of getting name: %d\n", Result);
+        printf("Computer name: %s\n", lpBuffer);
+
+    char NameAddon[19] = "_WLAN_PROFILES.txt";
+    char *FileName = malloc(strlen(lpBuffer) + strlen(NameAddon) + 1);
+    if (FileName == NULL) {
+        fprintf(stderr, "Failed to allocate memory for file name.\n");
+        WlanFreeMemory(ppInterfaceList);
+        WlanCloseHandle(hClientH, NULL);
+        exit(0);
+    }
+
+    sprintf(FileName, "%s%s", lpBuffer, NameAddon);
+    printf("Creating file: %s\n", FileName);
+
+    FILE *fp = fopen(FileName, "w");
     if (fp == NULL)
     {
         fprintf(stderr, "Failed to open output file.\n");
