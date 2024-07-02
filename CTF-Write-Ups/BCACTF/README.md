@@ -3,4 +3,4 @@ BCACTF was the first CTF I attended this summer break and was a blast to attempt
 
 ## 📰 Writeups
 
-- [🛠️ Inaccessible](CTF-Write-Ups/BCACTF/BCACTF-5.0-Inaccessible.pdf)
+- [🛠️ Inaccessible](BCACTF-5.0-Inaccessible.pdf)
