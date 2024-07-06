@@ -13,4 +13,4 @@ Upon hearing this, Han Xin knew immediately how many soldiers he had remaining.
 
 ## Steps: 
 - Using the Chinese Remainder Theorem N is = 1034 for how many soldiers Han Xin has left.
-- 
+![Chinese Remainder Theorem](Sun_Zi_Step_1_DUCTF_2024.PNG)
