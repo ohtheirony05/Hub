@@ -5,3 +5,10 @@ These writeups serve as a way of documenting my learning and journey in this fie
 
   - 🔨 Inaccessible
   - 🦑 Sea Scavanger
+
+- ## [🏁Down Under (2024)](DownUnderCTF-2024)
+  - 🎲 Shufflebox
+  - 🔍 tldr please summarise
+  - 🔎 Baby's First Forensics
+  - 🎮Discord
+  - ➗ Sun Zi's Perfect Math Class
