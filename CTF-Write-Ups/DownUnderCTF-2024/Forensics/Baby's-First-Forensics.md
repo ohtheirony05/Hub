@@ -5,4 +5,4 @@
 >NOTE: Wrap your answer in the ```DUCTF{}```, e.g. ```DUCTF{nmap_7.25}```
     
 **Author:** Pix   
-**File provided:** ![capture.pcap](capture.pcap)
+**File provided:** [capture.pcap](capture.pcap)
