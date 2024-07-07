@@ -2,7 +2,7 @@ Description: Everybody!! Sunzi's math class is about to begin!!!
 Author: Wednesday   
 Link: https://crypto-sunzi-perfect-math-class-6c3d583b3a73.2024.ductf.dev   
 
-#Sun Zi's Perfect Math Class
+# Sun Zi's Perfect Math Class
 In 200 BC, the Chinese general Han Xin marched into battle with 1500 soldiers. Afterwards, he could estimate that between 1000 and 1100 of them survived the battle, but needed to know exactly how many men he had.   
 
 At that moment, Han Xin's steward came up to his side and said
