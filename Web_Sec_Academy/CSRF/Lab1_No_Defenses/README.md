@@ -54,3 +54,37 @@ Hello, world!
 - Access Log
 
 ![Exploit_Server](Lab1_Exploit_Server_Original.png)
+
+## My account
+Displayed a login page requesting a username and password. Insert the provided credentials.
+
+Username:
+```
+wiener
+```
+Password:
+```
+peter
+```
+![Login page](Lab1_Login_Page.png)
+
+## Change account page
+After successfully logging in we're taken to the My Account page which has the option to update email. From the original lab description the vulnerable functionality in this website is the email update suggesting this form to be our initial attack vector.
+
+![My account](My_Account.png)
+
+Viewed the pages source and the update email form is:
+```
+<form class="login-form" name="change-email-form" action="/my-account/change-email" method="POST">
+    <label>Email</label>
+    <input required type="email" name="email" value="">
+    <button class='button' type='submit'> Update email </button>
+</form>
+```
+Seds a POST request to ```view-source:https://0a3500ce033f86a480602b28006400dd.web-security-academy.net/my-account/change-email``` containing the newly requested email we want to change to. Doesn't seem to contain a CSRF token.
+
+Lets attempt to change the email from ```wiener@normal-user.net``` to ```wiener2@normal-user.net``` and capture the request in burp suite.
+![Email_Change_1](Email_Change1.png)
+It seems to use the session ID in a cookie
+
+
