@@ -114,4 +114,8 @@ Select store to save it on the exploit server.
 Result:<br>
 ![View exploit](View_Exploit.png)
 
+## End
+Change the email in the body once more (Lab website doesn't allow changing of emails to emails already in use by another user). Then click ```store``` to save it to the exploit server. Once saved click ```Deliver exploit to victim```. If successful ```Congratulations, you solved the lab!``` should appear on the top.
+![End](Finish.png)
+
 
