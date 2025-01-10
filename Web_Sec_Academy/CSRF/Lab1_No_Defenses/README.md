@@ -111,4 +111,7 @@ Explanation
 Select store to save it on the exploit server.
 ![Insert malicious form](Malicious_Body.png)
 
+Result:<br>
+![View exploit](View_Exploit.png)
+
 
