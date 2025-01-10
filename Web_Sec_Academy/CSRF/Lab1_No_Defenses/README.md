@@ -1,6 +1,6 @@
-Title: CSRF vulnerability with No Defenses
-Rank/Tier: Apprentice
-Author: Portswigger Web Security Academy
+Title: CSRF vulnerability with No Defenses<br>
+Rank/Tier: Apprentice<br>
+Author: Portswigger Web Security Academy<br>
 Link: https://portswigger.net/web-security/learning-paths/csrf/csrf-how-to-construct-a-csrf-attack/csrf/lab-no-defenses
 
 # CSRF vulnerability with no defenses
