@@ -16,7 +16,7 @@ Tinkered with https://inyunqef0e.execute-api.us-east-2.amazonaws.com/api/private
 ![Modified_Form](Modified_Form.png)   
 ![Result](Result_Of_MF.png)
 
-## Exploitation
+## Credential Gathering
 **These next steps could be done using the form, but I found myself using curl instead.**   
 **Fun Note:** AWS uses 169.254.169.254 as the metadata-IP where the metadata service can be accessed via http://169.254.169.254/latest/meta-data/ from the E2 instance.
 1) Used ```curl -X POST http://3.15.107.79/ -d "url=https://inyunqef0e.execute-api.us-east-2.amazonaws.com/api/status"``` to test curl and see what would happen to the output. The output appeared to be a huge chunk instead of nicely spread out. This led me to further investigate SSRF on http://3.15.107.79/
