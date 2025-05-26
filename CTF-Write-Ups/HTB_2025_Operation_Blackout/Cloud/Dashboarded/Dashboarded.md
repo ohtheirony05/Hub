@@ -13,7 +13,7 @@ When inspecting the response in HTTP History of Burp Suite, the button sends a P
 ![Form](Form.png)   
 ![Private Endpoint API](Endpoints.png)
 
-Tinkered with https://inyunqef0e.execute-api.us-east-2.amazonaws.com/api/private in curl for a bit and eventually got stuck requiring a security token. Resulted in pivoting back to the Dashboard, and was curious to see what would happen if the URL was switched in the form to https://inyunqef0e.execute-api.us-east-2.amazonaws.com/api/private. The result appeared to do something, combined with the alert (potential hint) previously on the dashboard about a successful SSRF attack led to 2 hours of research on SSRF.
+Tinkered with https://inyunqef0e.execute-api.us-east-2.amazonaws.com/api/private in curl for a bit and eventually got stuck requiring a security token. Resulted in pivoting back to the Dashboard, and was curious to see what would happen if the URL  in the form was switched to https://inyunqef0e.execute-api.us-east-2.amazonaws.com/api/private. The result appeared to do something, combined with the alert (potential hint) previously on the dashboard about a successful SSRF attack, led to 2 hours of research on SSRF.
 ![Modified_Form](Modified_Form.png)   
 ![Result](Result_Of_MF.png)
 
