@@ -71,3 +71,6 @@ Active", "emergency_ventilation_system": "Automated, 99% Efficiency", "product_o
 ```
 # 🏁Flag 🏁
 Inside the output was the flag ```HTB{d4sh1nG_tHr0ugH_DaSHbO4rDs}```
+
+# Helpful link:
+Big thanks to https://hackingthe.cloud/aws/general-knowledge/intro_metadata_service/ for creating an easily digestible guide and lookup table. I've never done this before and this helped a lot.
