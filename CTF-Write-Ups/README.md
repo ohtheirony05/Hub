@@ -12,3 +12,4 @@ These writeups serve as a way of documenting my learning and journey in this fie
   - 🔎 Baby's First Forensics
   - 🎮Discord
   - ➗ Sun Zi's Perfect Math Class
+- ## [🏁HTB Operation Blackout 2025](HTB_2025_Operation_Blackout)
