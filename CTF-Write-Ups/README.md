@@ -13,3 +13,9 @@ These writeups serve as a way of documenting my learning and journey in this fie
   - 🎮Discord
   - ➗ Sun Zi's Perfect Math Class
 - ## [🏁HTB Operation Blackout 2025](HTB_2025_Operation_Blackout)
+  - Dashboarded
+  - Threat Index
+  - Pinpoint Physical Infrastructure Weak Points
+  - Profile & Research OPSEC on Shadow Talk Owner
+  - Undercover Financial Ties in Foreign Banks
+  - Map Volnaya's Industrial Influence Network
