@@ -14,12 +14,16 @@ Docker IPs provided:
 # Solve
 ## LeakedDocs
 In LeakedDocs, 3 major leaked documents revealed the shell company.   
-1) GIS Business Acquisition Report - Acquired GIS to serve as the primary front to cover equipment deployment due to GIS's previous legitimate history.
-2) Project Sentinel Internal Memo - Message to the Project Sentinel Team to remove all identifying markers on Node 7619 before inspection.
-3) Node Deployment Schedule - List the location of the Node delivery and the GIS-related manifests.
+1) GIS Business Acquisition Report - Acquired GIS to serve as the primary front to cover equipment deployment due to GIS's previous legitimate history.   
+![GIS Acquisition](GIS_Acquisition.png)
+2) Project Sentinel Internal Memo - Message to the Project Sentinel Team to remove all identifying markers on Node 7619 before inspection.   
+![Internal Memo](Internal_Memo.png)
+3) Node Deployment Schedule - List the location of the Node delivery and the GIS-related manifests.   
+![Node Deployment Info](Node_Information.png)
 
 ## Shipping Dashboard
-In both Manifest (SM-28471 & SM-28603), the recipient is GlobaLynx Industrial Systems, which can be abbreviated to GIS. In their notes are used for Project Sentinel Phase 1 and 2.
+In both Manifest (SM-28471 & SM-28603), the recipient is GlobaLynx Industrial Systems, which can be abbreviated to GIS. In their notes are used for Project Sentinel Phase 1 and 2.   
+![Shipping Manifests for Node 7619](Shipping_Manifests.png)
 
 # 🏁 Flag 🏁
 HTB{GLOBALYNX_INDUSTRIAL_SYSTEMS_FRONT}
