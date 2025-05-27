@@ -73,5 +73,7 @@ n = score
 print(n)
 ```
 # 🏁 Flag 🏁   
-HTB{thr34t_L3v3L_m1dn1ght_6f7ab25d6116e5d42c8958f27cabd5a8}
+```HTB{thr34t_L3v3L_m1dn1ght_6f7ab25d6116e5d42c8958f27cabd5a8}```  
+    
+![Flag](Code_Flag.png)
 
