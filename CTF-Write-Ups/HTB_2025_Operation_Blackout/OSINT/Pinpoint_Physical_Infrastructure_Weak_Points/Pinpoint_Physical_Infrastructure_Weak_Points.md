@@ -16,9 +16,13 @@ With the shell company, financial hub, and key personnel identified, our focus s
 ```
 # LocalNews Archive
 Many articles about the new data center (Facility Alpha) and each mention "Service Entrance B"
+![Article1](Article1.png)   
+![Article2](Article2.png)   
+![Article3](Article3.png)   
 
-#GeoSurveillance Portal
-There were constantly changing security alerts, but at the bottom was the "Camera Coverage Report," which put Service Entrance B at a high risk due to blindspots in camera coverage.
+# GeoSurveillance Portal
+There were constantly changing security alerts, but at the bottom was the "Camera Coverage Report," which put Service Entrance B at a high risk due to blindspots in camera coverage.   
+![Security Risk](Camera_Blindspot.png)
 
-#🏁 Flag 🏁
+#🏁 Flag 🏁   
 HTB{SERVICE_ENTRANCE_B_CAMERA_BLINDSPOT}
