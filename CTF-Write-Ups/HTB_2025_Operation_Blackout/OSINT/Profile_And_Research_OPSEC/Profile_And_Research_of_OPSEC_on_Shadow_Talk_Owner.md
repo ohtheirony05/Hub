@@ -13,10 +13,10 @@ Following the discovery of the front company and identifying main bank account a
 ```
 # Solve
 The target works at ETH and is a quantum researcher and professor. Additionally, they're also using company resources for personal projects.   
-
-Revealed an account with the name alexei in it and talks about an update on their research project.
-
-On Twitter clone @quantum_alexei is named Dr. Alexei Kuznetsov.
-
+![Working At ETH](Working_At_ETH.png)   
+Revealed a Twitter account with the name Alexei in it and talks about an update on their research project.
+![Twitter Account](Providing_First_Name.png)
+On Twitter clone @quantum_alexei is named Dr. Alexei Kuznetsov.   
+![Twitter Post](Twitter_Clone_Post.png)   
 # 🏁 Flag 🏁   
 HTB{DR_ALEXEI_KUZNETSOV_QUANTUM_RESEARCHER}
