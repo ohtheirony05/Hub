@@ -6,10 +6,19 @@ With the shell company, financial hub, and key personnel identified, our focus s
 **How it felt:** Pretty straightforward.
 **Flag format:** HTB{LOCATION_VULNERABILITY_TYPE}   
 **Example flag:** HTB{NORTH_GATE_CAMERA_BLINDSPOT}   
+
 **Docker IPs provided:**
 ```
 94.237.51.19:50243 -> HTB City Planning Archives
 94.237.51.19:52980 -> HTB GeoSurveillance Portal
-94.237.51.19:34705 -> HTB Localnews Archive
+94.237.51.19:34705 -> HTB LocalNews Archive
 94.237.51.19:47108 -> HTB IndustryCareers Network
 ```
+# LocalNews Archive
+Many articles about the new data center (Facility Alpha) and each mention "Service Entrance B"
+
+#GeoSurveillance Portal
+There were constantly changing security alerts, but at the bottom was the "Camera Coverage Report," which put Service Entrance B at a high risk due to blindspots in camera coverage.
+
+#🏁 Flag 🏁
+HTB{SERVICE_ENTRANCE_B_CAMERA_BLINDSPOT}
