@@ -5,7 +5,7 @@ With the shell company, financial hub, and key personnel identified, our focus s
 **HTB Rated Difficulty:** Medium   
 **How it felt:** Pretty straightforward.
 **Flag format:** HTB{LOCATION_VULNERABILITY_TYPE}   
-**Example flag:** HTB{NORTH_GATE_CAMERA_BLINDSPOT}
+**Example flag:** HTB{NORTH_GATE_CAMERA_BLINDSPOT}   
 **Docker IPs provided:**
 ```
 94.237.51.19:50243 -> HTB City Planning Archives
